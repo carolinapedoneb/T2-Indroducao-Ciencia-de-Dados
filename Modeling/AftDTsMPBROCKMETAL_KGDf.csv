@@ -1,4 +1,4 @@
-,index,node_id,Unnamed: 0,track_id,artists,album_name,track_name,popularity,duration_ms,explicit,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,time_signature,track_genre
+ ,index,node_id,Unnamed: 0,track_id,artists,album_name,track_name,popularity,duration_ms,explicit,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,time_signature,track_genre
 0,0,210,74000,6g2BiiVQqY5v1S4HIrM54F,Rodrigo Amarante,Tuyo (Narcos Theme) [Extended Version] [A Netflix Original Series Soundtrack],Tuyo (Narcos Theme) [Extended Version] - A Netflix Original Series Soundtrack,66,151565,False,0.765,0.497,1,-7.806,0,0.0402,0.492,0.366,0.143,0.457,112.195,4,mpb
 1,1,210,74001,6Dc2tCivms1s2X9myWe4ni,Rodrigo Amarante,Tuyo (Narcos Theme) [A Netflix Original Series Soundtrack],Tuyo (Narcos Theme) - A Netflix Original Series Soundtrack,65,89293,False,0.72,0.422,1,-13.338,0,0.069,0.474,0.0847,0.155,0.546,112.219,4,mpb
 2,2,163,74002,76HOOcFt3lKVdScmoScfz1,Djavan,"Djavan ""Ao Vivo""",Azul (Ao Vivo),49,259066,False,0.632,0.651,7,-8.658,0,0.0401,0.756,3.99e-06,0.726,0.652,119.567,4,mpb
