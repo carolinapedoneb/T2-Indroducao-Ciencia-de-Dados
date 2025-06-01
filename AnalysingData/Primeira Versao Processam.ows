@@ -3,32 +3,35 @@
 	<nodes>
 		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(-166.0, 165.0)" />
 		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(-12.0, 130.0)" />
-		<node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(136.0, 27.0)" />
+		<node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions" position="(328.0, 18.0)" />
 		<node id="3" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import (1)" position="(-127.0, 377.0)" />
 		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns (1)" position="(20.0, 381.0)" />
-		<node id="5" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot (1)" position="(88.0, -26.0)" />
+		<node id="5" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot (1)" position="(124.0, -30.0)" />
 		<node id="6" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="Preprocess" position="(131.0, 281.0)" />
 		<node id="7" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distributions (1)" position="(378.0, 340.0)" />
 		<node id="8" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations" position="(382.0, 184.0)" />
-		<node id="9" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations (1)" position="(280.0, -67.0)" />
+		<node id="9" name="Correlations" qualified_name="Orange.widgets.data.owcorrelations.OWCorrelations" project_name="Orange3" version="" title="Correlations (1)" position="(281.0, -66.0)" />
 		<node id="10" name="Heat Map" qualified_name="Orange.widgets.visualize.owheatmap.OWHeatMap" project_name="Orange3" version="" title="Heat Map" position="(504.0, 238.0)" />
+		<node id="11" name="Preprocess" qualified_name="Orange.widgets.data.owpreprocess.OWPreprocess" project_name="Orange3" version="" title="Preprocess (1)" position="(119.0, 159.0)" />
+		<node id="12" name="Heat Map" qualified_name="Orange.widgets.visualize.owheatmap.OWHeatMap" project_name="Orange3" version="" title="Heat Map (1)" position="(471.0, 65.0)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="2" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="3" source_node_id="1" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="4" source_node_id="4" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="5" source_node_id="6" sink_node_id="7" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
-		<link id="6" source_node_id="6" sink_node_id="8" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
-		<link id="7" source_node_id="1" sink_node_id="9" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="8" source_node_id="6" sink_node_id="10" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="1" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="4" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="6" sink_node_id="7" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="4" source_node_id="6" sink_node_id="8" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="5" source_node_id="6" sink_node_id="10" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="6" source_node_id="1" sink_node_id="11" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="11" sink_node_id="5" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="8" source_node_id="11" sink_node_id="9" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
+		<link id="9" source_node_id="11" sink_node_id="12" source_channel="Preprocessed Data" sink_channel="Data" enabled="true" source_channel_id="preprocessed_data" sink_channel_id="data" />
 	</links>
 	<annotations />
 	<thumbnail />
 	<node_properties>
 		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/Users/carolbarroco/Documents/RecomendSisKNN/TG2 RecommendSys/GitHub/T2-Indroducao-Ciencia-de-Dados/Datasets/MPBROCKMETAL_KGsubset.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 22, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/Users/carolbarroco/Documents/RecomendSisKNN/TG2 RecommendSys/GitHub/T2-Indroducao-Ciencia-de-Dados/untitled.ows'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 22, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/carolbarroco/Documents/RecomendSisKNN/TG2 RecommendSys/GitHub/T2-Indroducao-Ciencia-de-Dados/Datasets', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1d\x00\x00\x00\xd1\x00\x00\x03u\x00\x00\x02H\x00\x00\x02\x1d\x00\x00\x00\xed\x00\x00\x03u\x00\x00\x02H\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02\x1d\x00\x00\x00\xed\x00\x00\x03u\x00\x00\x02H', '__version__': 3}</properties>
-		<properties node_id="1" format="pickle">gASVsQMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+		<properties node_id="1" format="pickle">gASVkgQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
 cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAYYAAACP
 AAAEBQAAAooAAAGGAAAAqwAABAUAAAKKAAAAAAAAAAAFoAAAAYYAAACrAAAEBQAAAoqUjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
@@ -42,9 +45,13 @@ ZXNzlEsChpRoHEsJhpSMEGluc3RydW1lbnRhbG5lc3OUSwKGlGgcSwqGlIwIbGl2ZW5lc3OUSwKG
 lGgcSwuGlIwHdmFsZW5jZZRLAoaUaBxLDIaUjAV0ZW1wb5RLAoaUaBxLDYaUjA50aW1lX3NpZ25h
 dHVyZZRLAoaUaBxLDoaUjAt0cmFja19nZW5yZZRLAYaUjAVjbGFzc5RLAIaUjAh0cmFja19pZJRL
 A4aUjARtZXRhlEsAhpSMB2FydGlzdHOUSwOGlGhOSwGGlIwKYWxidW1fbmFtZZRLA4aUaE5LAoaU
-jAp0cmFja19uYW1llEsDhpRoTksDhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKGgXSwJo
-E0sCaBpLAmgeSwJoIUsBaCRLAmgnSwJoKksCaC1LAmgwSwFoM0sCaDZLAmg5SwJoPEsCaD9LAmhC
-SwJoRUsCaEhLAXWMBW1ldGFzlH2UKGhMSwNoUEsDaFNLA2hWSwN1dWJhdS4=
+jAp0cmFja19uYW1llEsDhpRoTksDhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKIwMVW5u
+YW1lZDogMC4xlEsCjApVbm5hbWVkOiAwlEsCjApwb3B1bGFyaXR5lEsCjAtkdXJhdGlvbl9tc5RL
+AowIZXhwbGljaXSUSwGMDGRhbmNlYWJpbGl0eZRLAowGZW5lcmd5lEsCjANrZXmUSwKMCGxvdWRu
+ZXNzlEsCjARtb2RllEsBjAtzcGVlY2hpbmVzc5RLAowMYWNvdXN0aWNuZXNzlEsCjBBpbnN0cnVt
+ZW50YWxuZXNzlEsCjAhsaXZlbmVzc5RLAowHdmFsZW5jZZRLAowFdGVtcG+USwKMDnRpbWVfc2ln
+bmF0dXJllEsCjAt0cmFja19nZW5yZZRLAXWMBW1ldGFzlH2UKIwIdHJhY2tfaWSUSwOMB2FydGlz
+dHOUSwOMCmFsYnVtX25hbWWUSwOMCnRyYWNrX25hbWWUSwN1dWJhdS4=
 </properties>
 		<properties node_id="2" format="pickle">gASV5wIAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMEGN1bXVs
 YXRpdmVfZGlzdHKUiYwTZml0dGVkX2Rpc3RyaWJ1dGlvbpRLAIwJaGlkZV9iYXJzlImMDWtkZV9z
@@ -80,26 +87,26 @@ a19uYW1llEsDhpRoTUsDhpR1Sv7///+GlGgHSwF1jAphdHRyaWJ1dGVzlH2UKGgXSwJoE0sCaBpL
 AmgeSwJoIUsBaCRLAmgnSwJoKksCaC1LAmgwSwFoM0sCaDZLAmg5SwJoPEsCaD9LAmhCSwJoRUsC
 aEhLAXWMBW1ldGFzlH2UKGhLSwNoT0sDaFJLA2hVSwN1dWJhdS4=
 </properties>
-		<properties node_id="5" format="pickle">gASVPAQAAAAAAAB9lCiMDWF0dHJfeF9pc19hYnOUiYwNYXR0cl95X2lzX2Fic5SJjAthdXRvX2Nv
+		<properties node_id="5" format="pickle">gASVSAQAAAAAAAB9lCiMDWF0dHJfeF9pc19hYnOUiYwNYXR0cl95X2lzX2Fic5SJjAthdXRvX2Nv
 bW1pdJSIjAthdXRvX3NhbXBsZZSIjBJjb250cm9sQXJlYVZpc2libGWUiIwTc2F2ZWRXaWRnZXRH
-ZW9tZXRyeZRDQgHZ0MsAAwAAAAAA5gAAAFMAAASlAAADMwAAAOYAAABvAAAEpQAAAzMAAAAAAAAA
-AAWgAAAA5gAAAG8AAASlAAADM5SMCXNlbGVjdGlvbpROjBF0b29sdGlwX3Nob3dzX2FsbJSIjA92
+ZW9tZXRyeZRDQgHZ0MsAAwAAAAABZwAAABkAAAUmAAAC+QAAAWcAAAA1AAAFJgAAAvkAAAAAAAAA
+AAWgAAABZwAAADUAAAUmAAAC+ZSMCXNlbGVjdGlvbpROjBF0b29sdGlwX3Nob3dzX2FsbJSIjA92
 aXN1YWxfc2V0dGluZ3OUfZSMBWdyYXBolH2UKIwLYWxwaGFfdmFsdWWUS4CMDWNsYXNzX2RlbnNp
 dHmUiYwRaml0dGVyX2NvbnRpbnVvdXOUiYwLaml0dGVyX3NpemWUSwCME2xhYmVsX29ubHlfc2Vs
 ZWN0ZWSUiYwWb3J0aG9ub3JtYWxfcmVncmVzc2lvbpSJjAtwb2ludF93aWR0aJRLCowMc2hvd19l
 bGxpcHNllImMCXNob3dfZ3JpZJSJjAtzaG93X2xlZ2VuZJSIjA1zaG93X3JlZ19saW5llIl1jAtf
 X3ZlcnNpb25fX5RLBYwQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdz
-lIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwKYXR0cl9jb2xvcpSMCnBvcHVsYXJpdHmU
-S2aGlIwKYXR0cl9sYWJlbJROSv7///+GlIwKYXR0cl9zaGFwZZROSv7///+GlIwJYXR0cl9zaXpl
-lE5K/v///4aUjAZhdHRyX3iUjAZlbmVyZ3mUS2aGlIwMYXR0cl94X2xvd2VylE5K/v///4aUjAxh
-dHRyX3hfdXBwZXKUTkr+////hpSMBmF0dHJfeZSMBXRlbXBvlEtmhpSMDGF0dHJfeV9sb3dlcpRO
-Sv7///+GlIwMYXR0cl95X3VwcGVylE5K/v///4aUaAx9lGgZSwV1jAphdHRyaWJ1dGVzlH2UKIwK
-cG9wdWxhcml0eZRLAowLZHVyYXRpb25fbXOUSwKMCGV4cGxpY2l0lEsBjAxkYW5jZWFiaWxpdHmU
-SwKMBmVuZXJneZRLAowDa2V5lEsCjAhsb3VkbmVzc5RLAowEbW9kZZRLAYwLc3BlZWNoaW5lc3OU
-SwKMDGFjb3VzdGljbmVzc5RLAowQaW5zdHJ1bWVudGFsbmVzc5RLAowIbGl2ZW5lc3OUSwKMB3Zh
-bGVuY2WUSwKMBXRlbXBvlEsCjA50aW1lX3NpZ25hdHVyZZRLAowLdHJhY2tfZ2VucmWUSwF1jAVt
-ZXRhc5R9lCiMCHRyYWNrX2lklEsDjAdhcnRpc3RzlEsDjAphbGJ1bV9uYW1llEsDjAp0cmFja19u
-YW1llEsDdXViYXUu
+lIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwKYXR0cl9jb2xvcpSMC3RyYWNrX2dlbnJl
+lEtlhpSMCmF0dHJfbGFiZWyUTkr+////hpSMCmF0dHJfc2hhcGWUTkr+////hpSMCWF0dHJfc2l6
+ZZROSv7///+GlIwGYXR0cl94lIwLc3BlZWNoaW5lc3OUS2aGlIwMYXR0cl94X2xvd2VylE5K/v//
+/4aUjAxhdHRyX3hfdXBwZXKUTkr+////hpSMBmF0dHJfeZSMC2R1cmF0aW9uX21zlEtmhpSMDGF0
+dHJfeV9sb3dlcpROSv7///+GlIwMYXR0cl95X3VwcGVylE5K/v///4aUaAx9lGgZSwV1jAphdHRy
+aWJ1dGVzlH2UKIwKcG9wdWxhcml0eZRLAowLZHVyYXRpb25fbXOUSwKMCGV4cGxpY2l0lEsBjAxk
+YW5jZWFiaWxpdHmUSwKMBmVuZXJneZRLAowDa2V5lEsCjAhsb3VkbmVzc5RLAowEbW9kZZRLAYwL
+c3BlZWNoaW5lc3OUSwKMDGFjb3VzdGljbmVzc5RLAowQaW5zdHJ1bWVudGFsbmVzc5RLAowIbGl2
+ZW5lc3OUSwKMB3ZhbGVuY2WUSwKMBXRlbXBvlEsCjA50aW1lX3NpZ25hdHVyZZRLAowLdHJhY2tf
+Z2VucmWUSwF1jAVtZXRhc5R9lCiMCHRyYWNrX2lklEsDjAdhcnRpc3RzlEsDjAphbGJ1bV9uYW1l
+lEsDjAp0cmFja19uYW1llEsDdXViYXUu
 </properties>
 		<properties node_id="6" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x1f\x00\x00\x00\x85\x00\x00\x04l\x00\x00\x02\x94\x00\x00\x01\x1f\x00\x00\x00\xa1\x00\x00\x04l\x00\x00\x02\x94\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x01\x1f\x00\x00\x00\xa1\x00\x00\x04l\x00\x00\x02\x94', 'storedsettings': {'name': '', 'preprocessors': [('orange.preprocess.scale', {'method': 4})]}, '__version__': 2}</properties>
 		<properties node_id="7" format="pickle">gASV9AIAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMEGN1bXVs
@@ -128,16 +135,16 @@ Y2hpbmVzc5RLAowMYWNvdXN0aWNuZXNzlEsCjBBpbnN0cnVtZW50YWxuZXNzlEsCjAhsaXZlbmVz
 c5RLAowHdmFsZW5jZZRLAowFdGVtcG+USwKMDnRpbWVfc2lnbmF0dXJllEsCdYwFbWV0YXOUfZR1
 YmF1Lg==
 </properties>
-		<properties node_id="9" format="pickle">gASV+gEAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBjb3JyZWxhdGlvbl90eXBllEsA
-jBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAIJAAAAIgAABSYAAAHNAAACCQAAAD4A
-AAUmAAABzQAAAAAAAAAABaAAAAIJAAAAPgAABSYAAAHNlIwLX192ZXJzaW9uX1+USwOMEGNvbnRl
+		<properties node_id="9" format="pickle">gASVEgIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBjb3JyZWxhdGlvbl90eXBllEsA
+jBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAAAAAO6AAAAGQAABXcAAAIOAAADugAAADUA
+AAV3AAACDgAAAAAAAAAABaAAAAO6AAAANQAABXcAAAIOlIwLX192ZXJzaW9uX1+USwOMEGNvbnRl
 eHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
-BnZhbHVlc5R9lCiMB2ZlYXR1cmWUTkr+////hpSMCXNlbGVjdGlvbpRdlCiMDGFjb3VzdGljbmVz
-c5RLZoaUjAZlbmVyZ3mUS2aGlGVK/f///4aUaAVLA3WMCmF0dHJpYnV0ZXOUfZQojApwb3B1bGFy
-aXR5lEsCjAtkdXJhdGlvbl9tc5RLAowMZGFuY2VhYmlsaXR5lEsCaBVLAowDa2V5lEsCjAhsb3Vk
-bmVzc5RLAowLc3BlZWNoaW5lc3OUSwJoE0sCjBBpbnN0cnVtZW50YWxuZXNzlEsCjAhsaXZlbmVz
-c5RLAowHdmFsZW5jZZRLAowFdGVtcG+USwKMDnRpbWVfc2lnbmF0dXJllEsCdYwFbWV0YXOUfZR1
-YmF1Lg==
+BnZhbHVlc5R9lCiMB2ZlYXR1cmWUTkr+////hpSMCXNlbGVjdGlvbpRdlCiMC2R1cmF0aW9uX21z
+lEtmhpSMC3NwZWVjaGluZXNzlEtmhpRlSv3///+GlGgFSwN1jAphdHRyaWJ1dGVzlH2UKIwKcG9w
+dWxhcml0eZRLAowLZHVyYXRpb25fbXOUSwKMDGRhbmNlYWJpbGl0eZRLAowGZW5lcmd5lEsCjANr
+ZXmUSwKMCGxvdWRuZXNzlEsCjAtzcGVlY2hpbmVzc5RLAowMYWNvdXN0aWNuZXNzlEsCjBBpbnN0
+cnVtZW50YWxuZXNzlEsCjAhsaXZlbmVzc5RLAowHdmFsZW5jZZRLAowFdGVtcG+USwKMDnRpbWVf
+c2lnbmF0dXJllEsCdYwFbWV0YXOUfZR1YmF1Lg==
 </properties>
 		<properties node_id="10" format="pickle">gASVxwMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMCGF2ZXJhZ2VzlIiMFWNvbF9jbHVzdGVyaW5n
 X21ldGhvZJSMBU5vbmVflIwMY29sb3JfY2VudGVylEsAjBBjb2x1bW5fbGFiZWxfcG9zlEsBjBJj
@@ -149,6 +156,27 @@ AAAA9AAAAGIAAASzAAAC1QAAAPQAAAB+AAAEswAAAtUAAAAAAAAAAAWgAAAA9AAAAH4AAASzAAAC
 X2xvd5RHAAAAAAAAAACMC19fdmVyc2lvbl9flEsDjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFu
 Z2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBRhbm5vdGF0
 aW9uX2NvbG9yX3ZhcpROSv7///+GlIwOYW5ub3RhdGlvbl92YXKUjAp0cmFja19uYW1llEtnhpSM
+G2NvbHVtbl9hbm5vdGF0aW9uX2NvbG9yX2tleZROSv7///+GlIwMc3BsaXRfYnlfdmFylE5K/v//
+/4aUjBFzcGxpdF9jb2x1bW5zX2tleZROSv7///+GlGgVSwN1jAphdHRyaWJ1dGVzlH2UKIwKcG9w
+dWxhcml0eZRLAowLZHVyYXRpb25fbXOUSwKMCGV4cGxpY2l0lEsBjAxkYW5jZWFiaWxpdHmUSwKM
+BmVuZXJneZRLAowDa2V5lEsCjAhsb3VkbmVzc5RLAowEbW9kZZRLAYwLc3BlZWNoaW5lc3OUSwKM
+DGFjb3VzdGljbmVzc5RLAowQaW5zdHJ1bWVudGFsbmVzc5RLAowIbGl2ZW5lc3OUSwKMB3ZhbGVu
+Y2WUSwKMBXRlbXBvlEsCjA50aW1lX3NpZ25hdHVyZZRLAowLdHJhY2tfZ2VucmWUSwF1jAVtZXRh
+c5R9lCiMCHRyYWNrX2lklEsDjAdhcnRpc3RzlEsDjAphbGJ1bV9uYW1llEsDjAp0cmFja19uYW1l
+lEsDdXViYXUu
+</properties>
+		<properties node_id="11" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01\x1f\x00\x00\x00\x85\x00\x00\x04l\x00\x00\x02\x94\x00\x00\x01\x1f\x00\x00\x00\xa1\x00\x00\x04l\x00\x00\x02\x94\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x01\x1f\x00\x00\x00\xa1\x00\x00\x04l\x00\x00\x02\x94', 'storedsettings': {'name': '', 'preprocessors': [('orange.preprocess.scale', {'method': 4})]}, '__version__': 2}</properties>
+		<properties node_id="12" format="pickle">gASVAAQAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMCGF2ZXJhZ2VzlIiMFWNvbF9jbHVzdGVyaW5n
+X21ldGhvZJSMBU5vbmVflIwMY29sb3JfY2VudGVylEsAjBBjb2x1bW5fbGFiZWxfcG9zlEsBjBJj
+b250cm9sQXJlYVZpc2libGWUiIwGbGVnZW5klIiMDG1lcmdlX2ttZWFuc5SJjA5tZXJnZV9rbWVh
+bnNfa5RLaowMcGFsZXR0ZV9uYW1llIwUbGluZWFyX2JteV8xMF85NV9jNziUjBVyb3dfY2x1c3Rl
+cmluZ19tZXRob2SUjApDbHVzdGVyaW5nlIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsAAwAA
+AAABCwAAAFgAAATKAAACywAAAQsAAAB0AAAEygAAAssAAAAAAAAAAAWgAAABCwAAAHQAAATKAAAC
+y5SMDXNlbGVjdGVkX3Jvd3OUXZQoTRcITVoJTV8ITRQKTWMJTZoITaQITWYITWIJTdQHTSwKTZYL
+TWUKTZUKTT8ITTcJTbILTd8HTTgIZYwOdGhyZXNob2xkX2hpZ2iURz/wAAAAAAAAjA10aHJlc2hv
+bGRfbG93lEcAAAAAAAAAAIwLX192ZXJzaW9uX1+USwOMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMFGFubm90
+YXRpb25fY29sb3JfdmFylE5K/v///4aUjA5hbm5vdGF0aW9uX3ZhcpSMCHRyYWNrX2lklEtnhpSM
 G2NvbHVtbl9hbm5vdGF0aW9uX2NvbG9yX2tleZROSv7///+GlIwMc3BsaXRfYnlfdmFylE5K/v//
 /4aUjBFzcGxpdF9jb2x1bW5zX2tleZROSv7///+GlGgVSwN1jAphdHRyaWJ1dGVzlH2UKIwKcG9w
 dWxhcml0eZRLAowLZHVyYXRpb25fbXOUSwKMCGV4cGxpY2l0lEsBjAxkYW5jZWFiaWxpdHmUSwKM
