@@ -1,1 +1,0 @@
-# T2-Indroducao-Ciencia-de-Dados
